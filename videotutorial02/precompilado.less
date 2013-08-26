@@ -1,0 +1,9 @@
+.border-radius(@radius: 3px) { -webkit-border-radius: @radius; -moz-border-radius: @radius; border-radius: @radius; }  
+
+.box-shadow(@x : 2px, @y : 2px, @blur : 5px, @spread : 0, @color : rgba(0,0,0,.6)) {  
+   -webkit-box-shadow: @x @y @blur @spread @color;  
+   -moz-box-shadow: @x @y @blur @spread @color;  
+   box-shadow: @x @y @blur @spread @color;  
+} 
+
+div { @color: green; background: @color; width: 300px; height:   300px; margin: 30px auto; .border-radius(10px); .box-shadow(); }
